@@ -14,10 +14,10 @@ const NavBar = () => {
 
   return (
     <div className="bg-base-100 shadow-sm">
-      <div className="navbar max-w-7xl mx-auto px-0">
+      <div className="navbar max-w-7xl mx-auto px-5 md:px-0">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className=" md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -41,15 +41,20 @@ const NavBar = () => {
               {navItems}
             </ul>
           </div>
-          <a className="text-3xl font-bold">
+          <a className="text-3xl font-bold hidden md:flex">
             Be<span className="text-orange-400">A</span>Dev
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
+        <div className="navbar-center">
+          <a className="text-3xl font-bold  md:hidden">
+            Be<span className="text-orange-400">A</span>Dev
+          </a>
+          <ul className="menu menu-horizontal px-1 hidden md:flex">
+            {navItems}
+          </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <p>Theme</p>
         </div>
       </div>
     </div>
