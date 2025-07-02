@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { TiThMenu } from "react-icons/ti";
 
@@ -55,7 +56,13 @@ const NavBar = () => {
                     aria-label="close sidebar"
                     className="drawer-overlay"
                   ></label>
-                  <ul className="menu bg-base-200 min-h-full w-40 px-4 pt-16">
+                  <ul className="menu bg-base-200 min-h-full w-1/2 px-4 pt-16">
+                    <label
+                      htmlFor="my-drawer"
+                      className="absolute top-4 right-4 cursor-pointer"
+                    >
+                      <IoClose size={25} />
+                    </label>
                     {navItems}
                   </ul>
                 </div>
