@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { FaMoon } from "react-icons/fa6";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 const NavBar = () => {
   const navItems = (
@@ -11,6 +13,22 @@ const NavBar = () => {
       </li>
     </>
   );
+
+  const [theme, setTheme] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    setTheme(savedTheme === "dark");
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = !theme;
+    setTheme(newTheme);
+    const appliedTheme = newTheme ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", appliedTheme);
+    localStorage.setItem("theme", appliedTheme);
+  };
 
   return (
     <div className="bg-base-100 shadow-sm">
@@ -45,16 +63,17 @@ const NavBar = () => {
             Be<span className="text-orange-400">A</span>Dev
           </a>
         </div>
-        <div className="navbar-center">
-          <a className="text-3xl font-bold  md:hidden">
+        <div className="navbar-center md:hidden">
+          <a className="text-3xl font-bold  ">
             Be<span className="text-orange-400">A</span>Dev
           </a>
-          <ul className="menu menu-horizontal px-1 hidden md:flex">
-            {navItems}
-          </ul>
         </div>
         <div className="navbar-end">
-          <p>Theme</p>
+          <div>
+            <button type="button" onClick={toggleTheme}>
+              {theme ? <FaMoon size={25} /> : <MdOutlineWbSunny size={25} />}
+            </button>
+          </div>
         </div>
       </div>
     </div>
