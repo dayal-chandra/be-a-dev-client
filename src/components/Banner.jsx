@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-5 max-w-7xl mx-auto">
       <div className="w-full">
         <h1>
-          <span className="text-2xl font-semibold">Learn</span>
+          <span className="text-3xl font-semibold">Learn</span>
           <br />{" "}
           {/* <span className="text-5xl font-bold text-orange-400">
             Web Development

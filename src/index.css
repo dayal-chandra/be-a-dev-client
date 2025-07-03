@@ -6,3 +6,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.active {
+  color: #ffa726;
+  border-bottom: 2px solid #ffa726;
+  border-radius: 0px;
+}
