@@ -3,15 +3,19 @@ import { FaMoon } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { TiThMenu } from "react-icons/ti";
+import { Link, NavLink } from "react-router";
 
 const NavBar = () => {
   const navItems = (
     <>
       <li>
-        <a>Item 1</a>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <a>Item 3</a>
+        <NavLink to="/login">Login</NavLink>
+      </li>
+      <li>
+        <NavLink to="signup">Sign Up</NavLink>
       </li>
     </>
   );
@@ -36,7 +40,7 @@ const NavBar = () => {
     <div className="bg-base-100 shadow-sm">
       <div className="navbar max-w-7xl mx-auto px-5 md:px-0">
         <div className="navbar-start">
-          <div>
+          <div className="z-50">
             <div tabIndex={0} role="button" className=" md:hidden">
               <div className="drawer">
                 <input
@@ -69,16 +73,19 @@ const NavBar = () => {
               </div>
             </div>
           </div>
-          <a className="text-3xl font-bold hidden md:flex">
+          <Link to="/" className="text-3xl font-bold hidden md:flex">
             Be<span className="text-orange-400">A</span>Dev
-          </a>
+          </Link>
         </div>
         <div className="navbar-center md:hidden">
-          <a className="text-3xl font-bold  ">
+          <Link to="/" className="text-3xl font-bold  ">
             Be<span className="text-orange-400">A</span>Dev
-          </a>
+          </Link>
         </div>
         <div className="navbar-end">
+          <ul className="menu menu-horizontal px-2 hidden md:flex">
+            {navItems}
+          </ul>
           <div>
             <button type="button" onClick={toggleTheme}>
               {theme ? <MdOutlineWbSunny size={25} /> : <FaMoon size={25} />}
