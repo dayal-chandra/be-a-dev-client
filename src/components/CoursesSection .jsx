@@ -29,19 +29,23 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-5 md:px-0 py-16">
-      <h2 className="text-3xl font-bold mb-8">Courses</h2>
+    <section className="max-w-7xl mx-auto py-16">
+      <h2 className="text-3xl font-bold mb-3">Courses</h2>
+      <p className=" mb-8 max-w-xl">
+        Explore our beginner-friendly courses to kickstart your journey in web
+        development. Learn at your own pace and build practical skills.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {courses.map((course, index) => (
           <div
             key={index}
-            className="border border-orange-400 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition"
+            className="border border-orange-400 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col"
           >
             <div className="h-8 rounded-t-xl bg-orange-400" />
-            <div className="p-5">
+            <div className="p-5 flex flex-col flex-grow justify-between">
               <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
               <p className=" mb-4">{course.description}</p>
-              <span className="px-3 py-1 border rounded-md text-sm">
+              <span className="px-3 py-1 border rounded-md text-sm w-auto self-start">
                 {course.level}
               </span>
             </div>
