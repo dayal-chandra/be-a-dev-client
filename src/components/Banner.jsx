@@ -16,7 +16,7 @@ const Banner = () => {
           Master the fundamental of web development with our interactive
           courses.
         </p>
-        <button className="btn mt-4 bg-orange-400 text-[16px] text-white hover:bg-transparent hover:text-orange-400 border border-orange-400">
+        <button className="btn mt-4 bg-orange-400 text-[16px] text-black hover:bg-transparent hover:text-orange-400 border border-orange-400">
           Browse Courses
         </button>
       </div>
