@@ -7,7 +7,7 @@ import { router } from "./routes/Routes.jsx";
 import "aos/dist/aos.css";
 import Aos from "aos";
 Aos.init({
-  duration: 500,
+  duration: 1500,
   mirror: true,
 });
 

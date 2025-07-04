@@ -29,7 +29,7 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto pt-20 text-center">
+    <section data-aos="fade-up" className="max-w-7xl mx-auto pt-20 text-center">
       <h2 className="text-3xl font-bold mb-3">Courses</h2>
       <p className="mb-12 max-w-xl mx-auto">
         Explore our beginner-friendly courses to kickstart your journey in web
