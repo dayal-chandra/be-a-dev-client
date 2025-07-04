@@ -29,9 +29,9 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-16">
+    <section className="max-w-7xl mx-auto pt-20 text-center">
       <h2 className="text-3xl font-bold mb-3">Courses</h2>
-      <p className=" mb-8 max-w-xl">
+      <p className="mb-12 max-w-xl mx-auto">
         Explore our beginner-friendly courses to kickstart your journey in web
         development. Learn at your own pace and build practical skills.
       </p>
@@ -39,7 +39,7 @@ const CoursesSection = () => {
         {courses.map((course, index) => (
           <div
             key={index}
-            className="border border-orange-400 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col"
+            className="border border-orange-400 rounded-xl overflow-hidden shadow-sm  flex flex-col hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_15px_#ffa726]"
           >
             <div className="h-8 rounded-t-xl bg-orange-400" />
             <div className="p-5 flex flex-col flex-grow justify-between">
@@ -51,6 +51,11 @@ const CoursesSection = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <button className="btn mt-8 bg-orange-400 text-[16px] text-black hover:bg-transparent hover:text-orange-400 border border-orange-400">
+          Browse Courses
+        </button>
       </div>
     </section>
   );

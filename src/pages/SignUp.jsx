@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const SignUp = () => {
   return (
-    <div className="hero ">
-      <div className="hero-content flex flex-col md:flex-row  w-full">
+    <div>
+      <div className="hero-content px-0 py-16 flex flex-col md:flex-row  w-full">
         <motion.div
           animate={{ y: [0, -20, 0] }}
           transition={{
