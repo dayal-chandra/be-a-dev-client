@@ -60,7 +60,7 @@ const SignUp = () => {
               </button>
               <div className="text-[16px] text-black py-2">
                 Already have an account?{" "}
-                <Link to="/signup" className="text-orange-400">
+                <Link to="/login" className="text-orange-400">
                   Login
                 </Link>
               </div>

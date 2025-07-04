@@ -13,10 +13,10 @@ const Banner = () => {
           <span className="text-orange-500 text-5xl md:text-7xl font-bold pt-2">
             <Typewriter
               words={[
-                "React",
+                "React.js",
                 "Node.js",
                 "MongoDB",
-                "Express",
+                "Express.js",
                 "Tailwind",
                 "MERN Stack",
                 "Next.js",
