@@ -8,7 +8,7 @@ const testimonials = [
     feedback:
       "Be-A-Dev helped me land my first developer job! The hands-on projects and real-world focus made learning fun and effective.",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "https://i.ibb.co/Xfjwyp2R/Screenshot-2025-07-04-151937.png",
   },
   {
     name: "Rajib Hasan",
@@ -16,7 +16,7 @@ const testimonials = [
     feedback:
       "The step-by-step roadmap and progress tracking kept me motivated. Highly recommend Be-A-Dev for aspiring developers!",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "https://i.ibb.co/WNrHQ9kZ/Screenshot-2025-07-04-151841.png",
   },
   {
     name: "Emily Carter",
@@ -24,7 +24,7 @@ const testimonials = [
     feedback:
       "I gained confidence building real projects. The community support was amazing throughout my learning journey.",
     rating: 4,
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    image: "https://i.ibb.co/7dVHNC46/Screenshot-2025-07-04-151917.png",
   },
 ];
 

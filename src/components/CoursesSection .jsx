@@ -1,4 +1,5 @@
 import React from "react";
+import BrowseCourses from "./BrowseCourses";
 
 const CoursesSection = () => {
   const courses = [
@@ -52,10 +53,8 @@ const CoursesSection = () => {
           </div>
         ))}
       </div>
-      <div>
-        <button className="btn mt-8 bg-orange-400 text-[16px] text-black hover:bg-transparent hover:text-orange-400 border border-orange-400">
-          Browse Courses
-        </button>
+      <div className="pt-4">
+        <BrowseCourses></BrowseCourses>
       </div>
     </section>
   );
