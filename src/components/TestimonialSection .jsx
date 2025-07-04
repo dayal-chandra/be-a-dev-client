@@ -32,7 +32,10 @@ const TestimonialSection = () => {
   return (
     <section className=" pt-20">
       <div>
-        <h2 data-aos="fade-up" className="text-3xl font-bold text-center mb-10">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold text-center mb-10"
+        >
           What Our Students Say
         </h2>
         <div

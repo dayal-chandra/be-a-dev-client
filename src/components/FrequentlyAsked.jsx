@@ -37,7 +37,10 @@ const FrequentlyAsked = () => {
 
   return (
     <section className=" pt-20">
-      <h2 data-aos="fade-up" className="text-3xl font-bold text-center mb-6">
+      <h2
+        data-aos="fade-up"
+        className="text-3xl md:text-4xl font-bold text-center mb-6"
+      >
         Frequently Asked Questions
       </h2>
       <div data-aos="fade-up" className="space-y-4">

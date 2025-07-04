@@ -19,24 +19,27 @@ const CoursesSection = () => {
       id: 3,
       title: "JavaScript",
       description: "Learn the fundamentals of JavaScript programming language",
-      level: "Beginner",
+      level: "Intermediate",
     },
     {
       id: 4,
       title: "React",
       description: "Build dynamic web applications using React",
-      level: "Beginner",
+      level: "Intermediate",
     },
   ];
 
   return (
-    <section data-aos="fade-up" className="max-w-7xl mx-auto pt-20 text-center">
-      <h2 className="text-3xl font-bold mb-3">Courses</h2>
+    <section className="max-w-7xl mx-auto pt-20 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-3">Courses</h2>
       <p className="mb-12 max-w-xl mx-auto">
         Explore our beginner-friendly courses to kickstart your journey in web
         development. Learn at your own pace and build practical skills.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
         {courses.map((course, index) => (
           <div
             key={index}

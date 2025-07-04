@@ -7,10 +7,13 @@ import { TbCertificate } from "react-icons/tb";
 const HowItWorks = () => {
   return (
     <div className="pt-20">
-      <h1 data-aos="fade-up" className="text-3xl text-center font-bold mb-3">
+      <h1
+        data-aos="fade-up"
+        className="text-3xl md:text-4xl text-center font-bold mb-3"
+      >
         How It Works
       </h1>
-      <p data-aos="fade-up" className="text-center pb-4">
+      <p data-aos="fade-up" className="text-center pb-10">
         Explore all features and Master the fundamental of Web Development with
         BeAdev.
       </p>
@@ -39,7 +42,7 @@ const HowItWorks = () => {
           </div>
           <div>
             <h1 className="text-2xl font-semibold pb-2">Test your knowledge</h1>
-            <p>Take guesses to evaluate your understanding of material</p>
+            <p>Take guesses to evaluate your understanding of material.</p>
           </div>
         </div>
         <div className="border border-orange-400 rounded-2xl p-5 flex flex-col md:flex-row gap-5 justify-start items-center hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_15px_#ffa726]">

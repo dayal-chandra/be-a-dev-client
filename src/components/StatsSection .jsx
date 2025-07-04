@@ -38,7 +38,10 @@ const StatsSection = () => {
   return (
     <section className=" pt-20">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 data-aos="fade-up" className="text-3xl font-bold text-center mb-10">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold text-center mb-10"
+        >
           Our Impact at Be<span className="text-orange-400">A</span>Dev
         </h2>
         <div
