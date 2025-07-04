@@ -4,7 +4,7 @@ import { GiProgression } from "react-icons/gi";
 import { IoCalendarNumber } from "react-icons/io5";
 import { TbCertificate } from "react-icons/tb";
 
-const Features = () => {
+const HowItWorks = () => {
   return (
     <div className="pt-20">
       <h1 data-aos="fade-up" className="text-3xl text-center font-bold mb-3">
@@ -59,4 +59,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default HowItWorks;

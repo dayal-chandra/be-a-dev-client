@@ -1,14 +1,18 @@
 import React from "react";
 import Banner from "./Banner";
 import CoursesSection from "./CoursesSection ";
-import Features from "./Features";
+import FrequentlyAsked from "./FrequentlyAsked";
+import HowItWorks from "./HowItWorks";
+import StatsSection from "./StatsSection ";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
       <CoursesSection></CoursesSection>
-      <Features></Features>
+      <HowItWorks></HowItWorks>
+      <StatsSection></StatsSection>
+      <FrequentlyAsked></FrequentlyAsked>
     </div>
   );
 };
