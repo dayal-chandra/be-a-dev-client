@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Courses = () => {
+  useEffect(() => {
+    document.title = "Be-A-Dev | Courses";
+  });
+
   const courses = [
     {
       id: 1,
@@ -81,7 +85,7 @@ const Courses = () => {
           All Courses
         </h1>
         <p className="text-center p-3">
-          Select any course to learn from the scratch.
+          Choose any course to learn from the scratch.
         </p>
       </div>
       <div className="mt-10">

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import login from "/login.png";
 import { Link } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { motion } from "framer-motion";
 
 const Login = () => {
+  useEffect(() => {
+    document.title = "Be-A-Dev | Login";
+  });
+
   return (
     <div className="hero ">
       <div className="hero-content px-0 flex-col lg:flex-row-reverse w-full">

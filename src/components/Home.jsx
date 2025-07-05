@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "./Banner";
 import FrequentlyAsked from "./FrequentlyAsked";
 import HowItWorks from "./HowItWorks";
@@ -9,6 +9,10 @@ import Newsletter from "./Newsletter";
 import WhatWeOffer from "./WhatWeOffer";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Be-A-Dev | Home";
+  });
+
   return (
     <div>
       <Banner></Banner>

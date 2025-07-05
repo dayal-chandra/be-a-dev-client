@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import signup from "/register.png";
 import { Link } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { motion } from "framer-motion";
 
 const SignUp = () => {
+  useEffect(() => {
+    document.title = "Be-A-Dev | Signup";
+  });
+
   return (
     <div>
       <div className="hero-content px-0 py-12 flex flex-col md:flex-row  w-full">
@@ -50,11 +54,6 @@ const SignUp = () => {
                 className="input w-full bg-gray-50 text-black"
                 placeholder="Password"
               />
-              <div>
-                <a className="link link-hover text-[16px] text-black">
-                  Forgot password?
-                </a>
-              </div>
               <button className="btn text-black hover:text-orange-400 bg-orange-400 hover:bg-transparent border border-orange-400 mt-4">
                 Sign Up
               </button>
