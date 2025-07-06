@@ -4,7 +4,7 @@ const Newsletter = () => {
   return (
     <section
       data-aos="fade-up"
-      className="mt-20 py-20 border border-orange-400 rounded-2xl"
+      className="mt-20 py-20 px-4 border border-orange-400 rounded-2xl"
     >
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay Updated!</h2>
