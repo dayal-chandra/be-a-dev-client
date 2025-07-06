@@ -15,7 +15,7 @@ const About = () => {
         to guide your journey into tech.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="p-6 shadow-orange-300 border border-orange-400 rounded-2xl hover:shadow-xl transition">
           <FaLaptopCode className="text-5xl text-orange-400 mb-4" />
           <h3 className="text-xl font-semibold mb-2">Practical Learning</h3>

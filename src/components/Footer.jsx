@@ -10,8 +10,12 @@ const Footer = () => {
           <NavLink to="/about" className="link link-hover">
             About us
           </NavLink>
-          <a className="link link-hover">Terms & Conditions</a>
-          <a className="link link-hover">Privacy Policy</a>
+          <NavLink to="/terms" className="link link-hover">
+            Terms & Conditions
+          </NavLink>
+          <NavLink to="/privacy" className="link link-hover">
+            Privacy Policy
+          </NavLink>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

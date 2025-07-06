@@ -6,6 +6,8 @@ import SignUp from "../pages/SignUp";
 import ErrorPage from "../pages/ErrorPage";
 import Courses from "../pages/Courses";
 import About from "../components/About";
+import TermsAndConditions from "../components/TermsAndConditions";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         Component: About,
+      },
+      {
+        path: "/terms",
+        Component: TermsAndConditions,
+      },
+      {
+        path: "/privacy",
+        Component: PrivacyPolicy,
       },
     ],
   },
