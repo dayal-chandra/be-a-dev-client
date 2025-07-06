@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../rootLayout/RootLayout";
-import Home from "../components/Home";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import ErrorPage from "../pages/ErrorPage";
 import Courses from "../pages/Courses";
-import About from "../components/About";
-import TermsAndConditions from "../components/TermsAndConditions";
-import PrivacyPolicy from "../components/PrivacyPolicy";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import TermsAndConditions from "../pages/TermsAndConditions";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 export const router = createBrowserRouter([
   {

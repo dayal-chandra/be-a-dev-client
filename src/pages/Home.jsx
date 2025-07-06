@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import Banner from "./Banner";
-import FrequentlyAsked from "./FrequentlyAsked";
-import HowItWorks from "./HowItWorks";
-import StatsSection from "./StatsSection ";
-import TestimonialSection from "./TestimonialSection ";
-import CallToAction from "./CallToAction ";
-import Newsletter from "./Newsletter";
-import WhatWeOffer from "./WhatWeOffer";
+import Banner from "../components/Banner";
+import WhatWeOffer from "../components/WhatWeOffer";
+import HowItWorks from "../components/HowItWorks";
+import StatsSection from "../components/StatsSection ";
+import TestimonialSection from "../components/TestimonialSection ";
+import CallToAction from "../components/CallToAction ";
+import FrequentlyAsked from "../components/FrequentlyAsked";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   useEffect(() => {
