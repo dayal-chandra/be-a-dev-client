@@ -89,7 +89,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-2 hidden md:flex">
             {navItems}
           </ul>
-          <div>
+          <div className="mt-2">
             <button type="button" onClick={toggleTheme}>
               {theme ? <MdOutlineWbSunny size={25} /> : <FaMoon size={25} />}
             </button>
