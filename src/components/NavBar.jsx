@@ -63,13 +63,15 @@ const NavBar = () => {
                     aria-label="close sidebar"
                     className="drawer-overlay"
                   ></label>
-                  <ul className="menu bg-base-200 min-h-full w-1/2 px-4 pt-16">
+
+                  <ul className="menu bg-base-200 min-h-full w-1/2  pt-12">
                     <label
                       htmlFor="my-drawer"
                       className="absolute top-4 right-4 cursor-pointer"
                     >
                       <IoClose size={25} />
                     </label>
+                    <div className="border-b-1"></div>
                     {navItems}
                   </ul>
                 </div>

@@ -2,7 +2,7 @@ import { FaLaptopCode, FaRocket, FaUsers } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
+    <div className="max-w-6xl mx-auto py-16">
       <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
       <p className="text-center max-w-3xl mx-auto text-lg mb-12">
         At{" "}
