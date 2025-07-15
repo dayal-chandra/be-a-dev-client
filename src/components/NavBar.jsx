@@ -18,10 +18,7 @@ const NavBar = () => {
         <NavLink to="/login">Login</NavLink>
       </li>
       <li>
-        <NavLink to="signup">Sign Up</NavLink>
-      </li>
-      <li>
-        <NavLink>Logout</NavLink>
+        <button>Logout</button>
       </li>
     </>
   );
@@ -70,7 +67,7 @@ const NavBar = () => {
                   <ul className="menu bg-base-200 min-h-full w-1/2  pt-12">
                     <label
                       htmlFor="my-drawer"
-                      className="absolute top-4 right-4 cursor-pointer"
+                      className="absolute top-5 left-5 cursor-pointer"
                     >
                       <IoClose size={25} />
                     </label>

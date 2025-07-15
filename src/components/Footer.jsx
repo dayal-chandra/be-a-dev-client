@@ -17,7 +17,7 @@ const Footer = () => {
               href="https://www.twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 hover:scale-150 hover:text-orange-400"
+              className="transition duration-200 hover:scale-150 hover:text-orange-400"
             >
               <FaTwitter size={30} />
             </a>
@@ -25,7 +25,7 @@ const Footer = () => {
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 hover:scale-150 hover:text-orange-400"
+              className="transition duration-200 hover:scale-150 hover:text-orange-400"
             >
               <FaYoutube size={30} />
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 hover:scale-150 hover:text-orange-400"
+              className="transition duration-200 hover:scale-150 hover:text-orange-400"
             >
               <FaFacebookF size={30} />
             </a>

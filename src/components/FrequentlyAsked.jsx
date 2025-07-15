@@ -45,21 +45,19 @@ const FrequentlyAsked = () => {
       </h2>
       <div data-aos="fade-up" className="space-y-4">
         {faqData.map((faq, index) => (
-          <div
+          <button
             key={index}
-            className="border border-gray-300 rounded-lg p-4 shadow-sm transition-all duration-300"
+            onClick={() => toggleFAQ(index)}
+            className="w-full flex flex-col text-left font-medium text-lg border border-gray-300 rounded-lg p-4 shadow-sm transition-all duration-300"
           >
-            <button
-              className="w-full flex justify-between items-center text-left font-medium text-lg"
-              onClick={() => toggleFAQ(index)}
-            >
+            <div className="flex justify-between">
               {faq.question}
               <span className="ml-2 text-xl">
                 {activeIndex === index ? "-" : "+"}
               </span>
-            </button>
+            </div>
             {activeIndex === index && <p className="mt-3">{faq.answer}</p>}
-          </div>
+          </button>
         ))}
       </div>
     </section>
